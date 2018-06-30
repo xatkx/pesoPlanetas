@@ -1,0 +1,190 @@
+
+body
+{
+	font-family: arial,helvetica,serif;
+	background: gray;
+	text-transform: capitalize;
+
+}
+
+section
+{
+	position: relative;
+	top: 5em;
+	width: 80%;
+	margin: auto;
+	padding: 0 10px 5em 10px;
+	background: white;
+	border-radius: 3px;
+	background: white;
+
+}
+section:after
+{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	content: "";
+	width: 99%;
+	height: 90%;
+
+	background: linear-gradient(red,violet,red,violet);
+	filter: blur(8px);
+	z-index: -1;
+
+}
+
+nav
+{
+	background: linear-gradient(to right,red,black, red,black, red,black);
+	color: white;
+	box-shadow: 0 3px 2px rgba(0, 0, 0, .3);
+
+}
+
+.barra
+{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.barra li
+{
+	display: inline-block;
+	text-decoration: none;
+}
+
+.barra li a
+{
+	display: block;
+	text-decoration: none;
+	color: white;
+	padding: 10px 15px;
+}
+
+.barra li a:hover
+{
+	transition: 0.5s;
+	transform: scale(1.1, 1);
+	background: white;
+	color: black;
+}
+
+.main
+{
+	background: white;
+	border-radius: 3px;
+	padding: 0 10%;
+}
+
+.tierra
+{
+	text-transform: none;
+	padding: 0 2em;
+}
+
+.title
+{
+	background: white;
+	text-align: center;
+	border-radius: 3px;
+	margin: 0;
+	padding: 0 2em;
+	color: black;
+}
+
+
+
+input[type="text"] , input[type="button"] , #option ,input[type="peso"] 
+{   
+	display: block;
+	border-style: none;
+	border-bottom: 1px solid black;
+	font-weight: bold;
+	margin: 0.5em 0;
+	padding: 29px 15px 1px 5px;
+	width: 10em;
+	
+	
+}
+
+input[type=button] , #option
+{
+	padding: 1em;
+    text-transform: capitalize;
+}
+article.datos
+{
+	position: relative;
+	right: 0;
+	top: 0;
+	background: rgba(4,4,4,0.3);
+	padding: 2%;
+	margin:2em 0;
+
+}
+
+.foto img
+{
+
+	border-radius: 3px;
+	width: 100%;
+	height: auto;
+}
+.con
+{
+	width: 70%;
+	float: right;
+}
+
+.text p
+{
+	text-indent: 2em;
+	text-transform: none;
+}
+
+@media screen and (max-width: 1000px)
+{
+	 .con
+	 {
+	 	width: 100%;
+	 	float: none;
+	 }
+}
+
+@media screen and (max-width: 480px){
+
+	section
+	{
+		width: 100%;
+		margin: 0;
+		padding: 0	;
+		top: 1em;
+	}
+
+	input[type="text"] , input[type="button"] , #option
+{   
+	display: block;
+	border-style: none;
+	border-bottom: 1px solid black;
+	font-weight: bold;
+	margin: 0.5em auto;
+	padding: 15px 15px 15px 5px;
+	width: 80%;
+	
+}
+ .main
+ {
+ 	padding: 10px;
+ 	margin: auto;
+ }
+ label
+ {
+ 	display: block;
+ }
+
+
+
+}
+
