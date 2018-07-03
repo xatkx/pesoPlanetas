@@ -35,7 +35,9 @@ function algo () {
 	var pesoFinal;
 
 //------------------------------------------
-	switch (option.value) {
+	if (peso.value && personaPeso != 0 && personaPeso) {
+
+		switch (option.value) {
 	case "marte":
 		pesoFinal = (personaPeso * marte) / g_tierra;
 		pesoFinal = parseInt(pesoFinal);
@@ -80,9 +82,13 @@ function algo () {
 
 	default:
 		// statements_def
-		result.value = "paso 2 please";
+		option.value = "paso 2 please";
 		break;
 }
+	}
+	else {
+		peso.value = "digite un valor valido";
+	}
 
 
 
